@@ -27,7 +27,7 @@ function UploadBill() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/extract-bill", {
+      const response = await fetch("https://billsplit-ai-485g.onrender.com/extract-bill", {
         method: "POST",
         body: formData,
       });
